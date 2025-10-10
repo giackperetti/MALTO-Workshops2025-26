@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="sex_preprocess__Sex_male <= 0.5\ngini = 0.476\nsamples = 709\nvalue = [432.0, 277.0]\nclass = 0", fillcolor="#f6d2b8"] ;
+1 [label="pclass_preprocess__Pclass <= 1.5\ngini = 0.38\nsamples = 251\nvalue = [64, 187]\nclass = 1", fillcolor="#7dbfee"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age_preprocess__Age <= 0.026\ngini = 0.059\nsamples = 132\nvalue = [4, 128]\nclass = 1", fillcolor="#3fa0e6"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = 0", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="gini = 0.045\nsamples = 130\nvalue = [3, 127]\nclass = 1", fillcolor="#3e9fe6"] ;
+2 -> 4 ;
+5 [label="sibsp_parch_preprocess__FamilySize <= 4.5\ngini = 0.5\nsamples = 119\nvalue = [60, 59]\nclass = 0", fillcolor="#fffdfc"] ;
+1 -> 5 ;
+6 [label="gini = 0.481\nsamples = 97\nvalue = [39, 58]\nclass = 1", fillcolor="#bedff6"] ;
+5 -> 6 ;
+7 [label="gini = 0.087\nsamples = 22\nvalue = [21, 1]\nclass = 0", fillcolor="#e68742"] ;
+5 -> 7 ;
+8 [label="pclass_preprocess__Pclass <= 0.5\ngini = 0.316\nsamples = 458\nvalue = [368, 90]\nclass = 0", fillcolor="#eba069"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="age_preprocess__Age <= 0.661\ngini = 0.469\nsamples = 96\nvalue = [60, 36]\nclass = 0", fillcolor="#f5cdb0"] ;
+8 -> 9 ;
+10 [label="gini = 0.489\nsamples = 80\nvalue = [46, 34]\nclass = 0", fillcolor="#f8decb"] ;
+9 -> 10 ;
+11 [label="gini = 0.219\nsamples = 16\nvalue = [14, 2]\nclass = 0", fillcolor="#e99355"] ;
+9 -> 11 ;
+12 [label="age_preprocess__Age <= 0.114\ngini = 0.254\nsamples = 362\nvalue = [308, 54]\nclass = 0", fillcolor="#ea975c"] ;
+8 -> 12 ;
+13 [label="gini = 0.486\nsamples = 24\nvalue = [10, 14]\nclass = 1", fillcolor="#c6e3f8"] ;
+12 -> 13 ;
+14 [label="gini = 0.209\nsamples = 338\nvalue = [298, 40]\nclass = 0", fillcolor="#e89254"] ;
+12 -> 14 ;
+}
